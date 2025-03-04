@@ -1,2 +1,0 @@
-# dynsible-blog
-dynsible-blog
