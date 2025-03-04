@@ -3,90 +3,120 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!--~~~~~~~~~~~~~~~ Favicon ~~~~~~~~~~~~~~~-->
-    <link rel="shortcut" href="assets/img/favicon.ico" type="image/x-icon">
-    <!--~~~~~~~~~~~~~~~ Remix Icon ~~~~~~~~~~~~~~~-->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.5.0/remixicon.min.css" />
-    <!--~~~~~~~~~~~~~~~ Swiper's CSS ~~~~~~~~~~~~~~~-->
-    <link href="./output.css" rel="stylesheet">
-    <title>Plant Website || TailwindCSS </title>
+    <!-- <link href="./output.css" rel="stylesheet"> -->
+    <script src="https://unpkg.com/@tailwindcss/browser@4"></script>
+    <title>Dynsible blog</title>
 </head>
-
 <body>
-    <!--~~~~~~~~~~~~~~~ Header ~~~~~~~~~~~~~~~-->
-    <header id="navbar" class="bg-green-950 fixed w-full top-0 left-0 z-50">
-        <nav class="containter flex items-center justify-between h-16 sm:h-20">
-            <div class="font-Lobster sm:text-2xl">Dynsible Garden</div>
-            <div id="nav-menu" class="absolute top-0 left-[100%] min-h-[80vh] w-full bg-green-950/80 backdrop-blur-sm flex items-center justify-center duration-300 overflow-hidden">
-                <ul class="flex flex-col items-center gap-8">
-                    <li><a href="#home" class="nav-link">Home</a></li>
-                    <li><a href="#about" class="nav-link">About</a></li>
-                    <li><a href="#popular" class="nav-link">Popular</a></li>
-                    <li><a href="#review" class="nav-link">Review</a></li>    
-                </ul>    
     
-                <div class="absolute bottom-0 -right-10 opacity-90">
-                    <img src="assets/img/leaf-1.png" alt="leaf_image" class="w-32">
-                </div>
-                <div class="absolute -top-5 -left-5 rotate-90 opacity-90">
-                    <img src="assets/img/leaf-2.png" alt="leaf_image" class="w-32">
-                </div>
-            </div>
-            <div>
-                <i class="ri-menu-4-line"></i>
-            </div>
+    <!-- Header -->
+    <header class="bg-white shadow-md p-4 flex justify-between items-center">
+        <h1 class="text-2xl font-bold">Dynsible blog</h1>
+        <nav>
+            <ul class="flex font-bold space-x-4">
+                <li><a href="#Home" class="text-blue-500 hover:underline">Home</a></li>
+                <li><a href="#Featured Posts" class="text-blue-500 hover:underline">Featured Posts</a></li>
+                <li><a href="#Newsletter" class="text-blue-500 hover:underline">Contact</a></li>
+            </ul>
         </nav>
-
     </header>
 
-    <main>
-        <!--~~~~~~~~~~~~~~~ Home ~~~~~~~~~~~~~~~-->
-        <section id="home">
-
-        </section>
-
-        <!--~~~~~~~~~~~~~~~ Services ~~~~~~~~~~~~~~~-->
-        <div>
-
+    <!-- Hero Section -->
+     <section id="Home">
+        <div class="bg-gray-200 justify-items-center text-gray p-4">
+            <img src="https://i1.feedspot.com/200/4751795.jpg?t=1599485096" class="w-auto animate-bounce" alt="Hero Pics">
+            <h2 class="text-2xl font-bold">Welcome to Dynsible blog</h2>
+            <p class="text-lg">The best place to read the latest articles and news on technology, lifestyle, travel, and more.</p>
         </div>
+     </section>
+    
+    <!-- Featured Posts -->
+    <section id="Featured Posts" class="container mx-auto mt-8 p-4">
+        <h2 class="text-xl text-center font-semibold mb-4">Featured Posts</h2>
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-4">
+            <div id="Post A" class="bg-white shadow-md p-4 rounded-lg">
+                <img src="./Monday.png" class="w-full rounded-md mb-2 h-90" alt="Post Image">
+                <h3 class="text-lg font-bold">Collect Income Every Monday Morning?</h3>
+                <p class="text-sm text-gray-600">Imagine it’s Monday morning…</p>
+                <a href="https://www.timsykes.com/weekend-windfalls/?utm_medium=WA&utm_campaign=09YzLwG2" class="mt-2 inline-block bg-blue-500 text-white px-4 py-2 rounded-lg">Read More</a>
+            </div>
+            <div id="Post B" class="bg-white shadow-md p-4 rounded-lg">
+                <img src="https://content.timothysykes.com/cdn-cgi/image/quality=90,format=webp,width=740/https://content.timothysykes.com/wp-content/uploads/2025/02/trump_tariff_stock_BLOG.jpg" class="w-full rounded-md mb-2 h-90" alt="Post Image">
+                <h3 class="text-lg font-bold">Trump Tariff Stock Trades</h3>
+                <p class="text-sm text-gray-600">Last weekend, President Trump finally announced his planned tariffs....</p>
+                <a href="https://www.timothysykes.com/blog/tariff-trades/" class="mt-2 inline-block bg-blue-500 text-white px-4 py-2 rounded-lg">Read More</a>
+            </div>
+            <div id="Post C" class="bg-white shadow-md p-4 rounded-lg">
+                <img src="https://content.timothysykes.com/cdn-cgi/image/quality=90,format=webp,width=740/https://content.timothysykes.com/wp-content/uploads/2025/02/i_told_you_to_BLOG.jpg" class="w-full rounded-md mb-2 h-90" alt="Post Image">
+                <h3 class="text-lg font-bold">I Told You To Watch For These Stocks</h3>
+                <p class="text-sm text-gray-600">we covered my most effective process for finding trade opportunities....</p>
+                <a href="https://www.timothysykes.com/blog/watch-these-stocks-02-19/" class="mt-2 inline-block bg-blue-500 text-white px-4 py-2 rounded-lg">Read More</a>
+            </div>
 
-        <!--~~~~~~~~~~~~~~~ About us ~~~~~~~~~~~~~~~-->
-        <section id="about">
 
-        </section>
+            <div id="Post D" class="bg-white shadow-md p-4 rounded-lg">
+                <img src="https://addicted2success.com/wp-content/uploads/2025/02/10-Powerful-Steps-to-Define-and-Solve-Any-Hard-Problem-Effectively.png" class="w-full rounded-md mb-2 h-90" alt="Post Image">
+                <h3 class="text-lg font-bold">10 Powerful Steps</h3>
+                <p class="text-sm text-gray-600">If the problem is framed too narrowly, it could limit an effective solution…</p>
+                <a href="https://addicted2success.com/entrepreneur-profile/10-powerful-steps-to-define-and-solve-any-hard-problem-effectively/" class="mt-2 inline-block bg-blue-500 text-white px-4 py-2 rounded-lg">Read More</a>
+            </div>
+            <div id="Post E" class="bg-white shadow-md p-4 rounded-lg">
+                <img src="https://www.success.com/wp-content/uploads/2025/02/upgrade-your-yard-for-spring-header.jpg" class="w-full rounded-md mb-2 h-90" alt="Post Image">
+                <h3 class="text-lg font-bold">9 Great Ways to Upgrade Your Yard</h3>
+                <p class="text-sm text-gray-600">It may be cold outside, but it’s not too early to start preparing....</p>
+                <a href="https://www.success.com/ways-to-upgrade-yard-for-spring/" class="mt-2 inline-block bg-blue-500 text-white px-4 py-2 rounded-lg">Read More</a>
+            </div>
+            <div id="Post F" class="bg-white shadow-md p-4 rounded-lg">
+                <img src="https://www.iwillteachyoutoberich.com/wp-content/uploads/2022/08/unnamed-24-1.jpg" class="w-full rounded-md mb-2 h-90" alt="Post Image">
+                <h3 class="text-lg font-bold">Jobs That Make a Lot of Money</h3>
+                <p class="text-sm text-gray-600">In this guide, I’ll walk you through 17 of the best high paying jobs....</p>
+                <a href="https://www.iwillteachyoutoberich.com/jobs-that-make-a-lot-of-money/" class="mt-2 inline-block bg-blue-500 text-white px-4 py-2 rounded-lg">Read More</a>
+            </div>
+        </div>
+    </section>
 
-        <!--~~~~~~~~~~~~~~~ Popular ~~~~~~~~~~~~~~~-->
-        <section id="popular">
+    <!-- Categories -->
+    <section class="container mx-auto mt-8 p-4">
+        <h2 class="text-xl font-semibold mb-4">Categories</h2>
+        <div class="flex space-x-2">
+            <span class="bg-blue-500 text-white px-3 py-1 rounded-full text-sm">Stocks</span>
+            <span class="bg-green-500 text-white px-3 py-1 rounded-full text-sm">Motivation</span>
+            <span class="bg-red-500 text-white px-3 py-1 rounded-full text-sm">Travel</span>
+        </div>
+    </section>
 
-        </section>
-
-        <!--~~~~~~~~~~~~~~~ Review ~~~~~~~~~~~~~~~-->
-        <section id="review">
-
-        </section>
-    </main>
-
-    <!--~~~~~~~~~~~~~~~ Footer ~~~~~~~~~~~~~~~-->
-    <footer>
-        <!-- newsletter -->
-        
-        <!-- social icon -->
-
-        <!-- content -->
-
-        <!-- copyright -->
-
-        <!-- floral image -->
+    <!-- Recent Posts -->
+    <section class="container mx-auto mt-8 p-4">
+        <h2 class="text-xl font-semibold mb-4">Recent Posts</h2>
+        <ul>
+            <li class="mb-2"><a href="#Post A" class="text-blue-500 font-bold">Collect Income Every Monday Morning?</a> <span class="text-gray-500 text-sm">- Feb 1, 2025</span></li>
+            <li class="mb-2"><a href="#Post B" class="text-blue-500 font-bold">Trump Tariff Stock Trades</a> <span class="text-gray-500 text-sm">- Feb 2, 2025</span></li>
+            <li class="mb-2"><a href="#Post C" class="text-blue-500 font-bold">I Told You To Watch For These Stocks</a> <span class="text-gray-500 text-sm">- Feb 3, 2025</span></li>
+            <li class="mb-2"><a href="#Post D" class="text-blue-500 font-bold">10 Powerful Steps</a> <span class="text-gray-500 text-sm">- Jan 1, 2025</span></li>
+            <li class="mb-2"><a href="#Post E" class="text-blue-500 font-bold">9 Great Ways to Upgrade Your Yard</a> <span class="text-gray-500 text-sm">- Mar 2, 2025</span></li>
+            <li class="mb-2"><a href="#Post F" class="text-blue-500 font-bold">Jobs That Make a Lot of Money</a> <span class="text-gray-500 text-sm">- Mar 3, 2025</span></li>
+        </ul>
+    </section>
+    
+    <!-- Newsletter Subscription -->
+    <section id="Newsletter" class="container mx-auto mt-8 p-4 bg-white shadow-md rounded-lg">
+        <h2 class="text-xl font-semibold mb-4">Subscribe to Our Newsletter</h2>
+        <form class="flex">
+            <input type="email" placeholder="Enter your email" class="w-full p-2 border rounded-l-lg">
+            <button type="submit" class="bg-blue-500 text-white px-4 py-2 rounded-r-lg">Subscribe</button>
+        </form>
+    </section>
+    
+    <!-- Footer -->
+    <footer class="bg-gray-800 text-white text-center p-4 mt-8">
+        <p>&copy; 2025 Dynsible Blog. All rights reserved.</p>
+        <div class="flex justify-center space-x-4 mt-2">
+            <a href="#" class="hover:text-blue-400">Facebook</a>
+            <a href="#" class="hover:text-blue-400">Twitter</a>
+            <a href="#" class="hover:text-blue-400">Instagram</a>
+        </div>
     </footer>
 
-    <!--~~~~~~~~~~~~~~~ Scroll Up ~~~~~~~~~~~~~~~-->
-
-    <!--~~~~~~~~~~~~~~~ Swiper JS ~~~~~~~~~~~~~~~-->
-
-    <!--~~~~~~~~~~ SCROLLREVEAL ~~~~~~~~~~-->
-
-    <!--~~~~~~~~~~ mainjs ~~~~~~~~~~-->
-    
 </body>
-
 </html>
